@@ -15,12 +15,8 @@ class AllProducts {
                 const productHtml = data
                     .map((furniture) => {
                         return `
-                    <figure id="figure-produit">
-                        <img src="${
-                            furniture.imageUrl
-                        }" alt="${
-                            furniture.name
-                        }" id="product-image">
+                    <figure id="figure-produit" class="figure-produit">
+                        <img src="${furniture.imageUrl}" alt="${furniture.name}" id="products-image" class="products-image">
                         <figcaption>
                             <div>
                                 <h2>
@@ -31,7 +27,7 @@ class AllProducts {
                                 <p>
                                     ${furniture.description}
                                 </p>
-                                <div>
+                                <div class="detail-and-price">
                                     <h3 class="text-xl font-medium merriweather">
                                         ${furniture.price / 100} €
                                     </h3>
