@@ -7,7 +7,7 @@ class SingleProduct {
     * Permet de récupérer dynamiquement les données du
     * produit sélectionné par l'utilisateur
     */
-    getProductData() {
+    static getProductData() {
         // URL de l'API
         const url = "http://localhost:3000/api/furniture";
         
