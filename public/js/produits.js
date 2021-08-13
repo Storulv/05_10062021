@@ -34,9 +34,7 @@ class AllProducts {
                                         ${furniture.price / 100} €
                                     </h3>
                                     <div>
-                                        <a href="/public/views/produit.html?id${
-                                            furniture._id
-                                        }"> 
+                                        <a href="/public/views/produit.html?id${furniture._id}"> 
                                             <span>Voir le produit</span>
                                         </a>
                                     </div>

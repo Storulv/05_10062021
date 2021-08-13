@@ -62,8 +62,12 @@ nav a{
     object-fit: cover;
 }
 
-.detail-and-price{
+.detail-and-price {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.fiche-produit {
+    display: flex;
 }

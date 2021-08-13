@@ -27,11 +27,11 @@ class SingleProduct {
         })
         .then((data) => {
             // Ajout de la photo du produit
-            let imageElement = document.querySelector("#figure");
+            let imageElement = document.querySelector("#img-produit");
             imageElement.insertAdjacentHTML(
                 "afterbegin",
                 `
-                <img src="${data.imageUrl}" class="w-80 h-auto object-cover rounded-md" alt="" id="product-image">
+                <img src="${data.imageUrl}" class="product-img" alt="" id="product-image">
                 `
                 );
                 
@@ -40,11 +40,11 @@ class SingleProduct {
                 productName.innerHTML = data.name;
                 
                 // Ajout de la description du produit
-                let productDescription = document.querySelector("#product-description");
+                let productDescription = document.querySelector("#description-produit");
                 productDescription.innerHTML = data.description;
                 
                 // Ajout de la personnalisation du produit
-                let productLens = document.querySelector("#objectifs");
+                let productLens = document.querySelector("#couleur-produit");
                 for (let i = 0; i < data.lenses.length; i++) {
                     productLens.insertAdjacentHTML(
                         "afterbegin",
